@@ -1,0 +1,11 @@
+FROM centos:latest
+
+RUN yum update -y
+RUN mkdir -p /opt/application
+
+WORKDIR /opt/application
+
+COPY main .
+
+EXPOSE 8080
+ENTRYPOINT ["sh", "-c", "./main"]
