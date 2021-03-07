@@ -29,6 +29,15 @@ jobs:
     - name: Test
       run: go test -v ./bs/cmd
 
+    - name: Generate Build Files
+      uses: thatisuday/go-cross-build@v1
+      with:
+        platforms: 'linux/amd64'
+        package: 'test'
+        name: 'supermarket'
+        compress: 'false'
+        dest: './bs/cmd'
+
   deploy:
     runs-on: ubuntu-latest
     needs: [build]
