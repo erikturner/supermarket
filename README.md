@@ -4,9 +4,16 @@ RESTful API to add, delete, and fetch produce from system
 
 ## Install:
 
-go version go1.15.3 or latest
-
-``` 
-go get "github.com/gorilla/mux
-```
 docker desktop
+
+## Running the code
+```
+docker pull erikturner/supermarket:1
+```
+
+### Spin up the service
+
+```
+# start docker container 
+docker run --rm -p 8080:8080 erikturner/supermarket:1
+```
