@@ -151,7 +151,7 @@ func Test_AddProduce(t *testing.T) {
 }
 
 func Test_RemoveProduce(t *testing.T) {
-	
+
 	tests := map[string]struct {
 		testID       string
 		expectedResp int
