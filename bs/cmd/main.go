@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"regexp"
 	"strings"
-	"superMarketAPI/bsapi"
+	"test.com/supermarket/bsapi/bsapi"
 )
 
 func stringRef(s string) *string {

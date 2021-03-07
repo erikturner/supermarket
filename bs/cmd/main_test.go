@@ -3,11 +3,11 @@ package main
 import (
 	"bytes"
 	"encoding/json"
-	"superMarketAPI/bsapi"
 	"github.com/gorilla/mux"
 	"io/ioutil"
 	"net/http"
 	"net/http/httptest"
+	"test.com/supermarket/bsapi/bsapi"
 	"testing"
 )
 
