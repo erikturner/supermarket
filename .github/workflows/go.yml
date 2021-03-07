@@ -44,7 +44,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./
-          file: ./Dockerfile
+          file: ./supermarket_dockerfile
           push: true
           tags: erikturner/supermarket:latest
       - name: Image digest
