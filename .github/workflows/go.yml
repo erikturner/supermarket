@@ -30,7 +30,7 @@ jobs:
       run: go test -v ./bs/cmd
 
     - name: Generate Build Files
-      uses: wangyoucao577/go-release-action@1.14
+      uses: wangyoucao577/go-release-action@v1.14
       with:
         github_token: ${{ secrets.ACCESS_TOKEN }}
         goos: linux
