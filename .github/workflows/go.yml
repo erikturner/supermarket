@@ -35,7 +35,6 @@ jobs:
         github_token: ${{ secrets.ACCESS_TOKEN }}
         goos: linux
         goarch: amd64
-        project_path: ./bs/cmd
 
   deploy:
     runs-on: ubuntu-latest
