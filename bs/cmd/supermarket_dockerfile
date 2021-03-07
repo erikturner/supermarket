@@ -5,7 +5,7 @@ RUN mkdir -p /opt/application
 
 WORKDIR /opt/application
 
-COPY main-darwin-amd64 .
+COPY main .
 
 EXPOSE 8080
 ENTRYPOINT ["sh", "-c", "./main"]

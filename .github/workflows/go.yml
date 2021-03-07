@@ -30,13 +30,12 @@ jobs:
       run: go test -v ./bs/cmd
 
     - name: Generate Build Files
-      uses: thatisuday/go-cross-build@v1
+      uses: wangyoucao577/go-release-action@1.14
       with:
-        platforms: 'linux/amd64'
-        package: 'test'
-        name: 'supermarket'
-        compress: 'false'
-        dest: './bs/cmd'
+        github_token: ${{ secrets.ACCESS_TOKEN }}
+        goos: linux
+        goarch: amd64
+        project_path: ./bs/cmd
 
   deploy:
     runs-on: ubuntu-latest
