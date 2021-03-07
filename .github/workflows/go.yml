@@ -24,7 +24,7 @@ jobs:
         go get -u github.com/gorilla/mux
 
     - name: Build
-      run: go build ./superMarketAPI/bs/cmd
+      run: go build ./bs/cmd
 
     - name: Test
-      run: go test -v ./superMarketAPI/bs/cmd
+      run: go test -v ./bs/cmd
