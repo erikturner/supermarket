@@ -5,6 +5,8 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  release:
+    types: [ created ]
 
 jobs:
 
@@ -30,8 +32,7 @@ jobs:
       run: go test -v ./bs/cmd
 
     - name: Generate Build Files
-    - uses: actions/checkout@v2
-    - uses: wangyoucao577/go-release-action@v1.14
+      uses: wangyoucao577/go-release-action@v1.14
       with:
         github_token: ${{ secrets.ACCESS_TOKEN }}
         goos: linux
