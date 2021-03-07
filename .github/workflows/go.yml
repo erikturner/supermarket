@@ -24,7 +24,7 @@ jobs:
         go get github.com/gorilla/mux
 
     - name: Build
-      run: go build -v ./bs/cmd
+      run: go build -v /bs/cmd
 
     - name: Test
-      run: go test -v ./bs/cmd
+      run: go test -v /bs/cmd
