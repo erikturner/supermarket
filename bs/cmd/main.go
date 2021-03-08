@@ -95,8 +95,8 @@ func addProduceHandler(w http.ResponseWriter, r *http.Request) {
 		for i := range str {
 			size := []rune(str[i])
 			if !match  || len(str) != 4 || (match && len(size) != 4) || len(size) != 4 {
-				log.Println("error produce code invalid format")
-				http.Error(w, "error produce code invalid format", http.StatusBadRequest)
+				log.Println("error produce code invalid format for produce code: " + *produce.ProduceCode)
+				http.Error(w, "error produce code invalid format for produce code: " + *produce.ProduceCode, http.StatusBadRequest)
 				return
 			}
 		}
